@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Touch of Pragya</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="topcgpt.html">
+        <img src ="Ellipse 1.jpg" alt="Touch of Pragya Logo" class="logo">
+      </a>
+      
+      <a href="topcgpt.html" class="home-link">
+        <h1 class="name">TOUCH OF PRAGYA</h1>
+      </a>
+      <nav class = "buttons">
+        <a href="products.html"><button class="prod-btn">Products</button></a>
+        <a href="bookings.html"><button class="book-btn">Bookings</button></a>
+        <a href="classes.html"><button class="clas-btn">Classes</button></a>
+      </nav>
+    </header>
+
+    <section class="banner">
+        <div class="slider">
+          <input type="radio" name="slider" id="slide1" checked>
+          <input type="radio" name="slider" id="slide2">
+          <input type="radio" name="slider" id="slide3">
+          <input type="radio" name="slider" id="slide4">
+      
+          <div class="slides">
+            <div class="slide s1">
+              <img src="6DA2258B-9F3D-4BE3-92A9-0F5339724A4A_1_105_c.jpeg" alt="Image 1">
+            </div>
+            <div class="slide s2">
+              <img src="E418666D-AB1E-4252-8BB6-4853F74D29B0_1_105_c.jpeg" alt="Image 2">
+            </div>
+            <div class="slide s3">
+              <img src="FB5FB789-6138-46F6-A19F-8CD5583D05BF_1_105_c.jpeg" alt="Image 3">
+            </div>
+            <div class="slide s4">
+              <img src="E418666D-AB1E-4252-8BB6-4853F74D29B0_1_105_c.jpeg" alt="Image 4">
+            </div>
+          </div>
+      
+          <div class="navigation">
+            <label for="slide1" class="bar"></label>
+            <label for="slide2" class="bar"></label>
+            <label for="slide3" class="bar"></label>
+            <label for="slide4" class="bar"></label>
+          </div>
+        </div>
+      </section>
+
+    <section class="ultimate-range">
+      <h2>THE ULTIMATE RANGE</h2>
+      <p>Get your hands on our top picks and best selling</p>
+      <div class="products">
+        <div class="product-card">
+          <div class="placeholder"></div>
+          <p>Name</p>
+          <p>Price</p>
+        </div>
+        <div class="product-card">
+          <div class="placeholder"></div>
+          <p>Name</p>
+          <p>Price</p>
+        </div>
+        <div class="product-card">
+          <div class="placeholder"></div>
+          <p>Name</p>
+          <p>Price</p>
+        </div>
+        <div class="product-card">
+          <div class="placeholder"></div>
+          <p>Name</p>
+          <p>Price</p>
+        </div>
+        <div class="product-card">
+          <div class="placeholder"></div>
+          <p>Name</p>
+          <p>Price</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <h2>Services</h2>
+      <p>ARE YOU HRISHIK?</p>
+      <div class="service-card">
+        <img src="https://via.placeholder.com/100" alt="Client Service">
+        <div>
+          <h3>CLIENT</h3>
+          <p>Tailored Makeup Services for Every Occasion!</p>
+          <p>2 Packages available</p>
+          <a href="#">See details</a>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="https://via.placeholder.com/100" alt="Student Class">
+        <div>
+          <h3>STUDENT</h3>
+          <p>Professional Makeup Classes to Elevate Your Skills!</p>
+          <p>3 Packages available</p>
+          <a href="#">See details</a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+    let index = 1;
+  
+    setInterval(() => {
+      document.getElementById('slide' + index).checked = true;
+      index = index % 4 + 1; 
+    }, 4000); // change every 4 seconds
+  </script>
+</body>
+</html>

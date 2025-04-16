@@ -1,9 +1,10 @@
 body {
     margin: 0;
-    font-family:'Times New Roman', Times, serif; 
-    background: linear-gradient(to bottom, #fee2e2, #fecaca, #f87171);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(to bottom, #D2b4DE, #F7CAC9);
     color: #4a4a4a;
   }
+  
   
   .container {
     max-width: 900px;
@@ -86,8 +87,9 @@ margin-bottom: 60px;
   
   .slides {
     display: flex;
-    width: 300%;
-    transition: transform 0.6s ease;
+    width: 400%;
+    transition: transform 0.6s ease-in-out;
+
   }
   
   .slide {
@@ -134,13 +136,20 @@ margin-bottom: 60px;
   
   #slide3:checked ~ .slides {
     transform: translateX(-200%);
+
+  }
+  #slide4:checked ~ .slides {
+    transform: translateX(-300%);
+    
   }
   
   #slide1:checked ~ .navigation label[for="slide1"],
-  #slide2:checked ~ .navigation label[for="slide2"],
-  #slide3:checked ~ .navigation label[for="slide3"] {
-    background: #d81b60;
-  }
+#slide2:checked ~ .navigation label[for="slide2"],
+#slide3:checked ~ .navigation label[for="slide3"],
+#slide4:checked ~ .navigation label[for="slide4"] {
+  background: #d81b60;
+}
+
   .ultimate-range {
     text-align: center;
     background-color: #fff0f6;
@@ -153,6 +162,9 @@ margin-bottom: 60px;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
   }
   
   .product-card {
@@ -165,6 +177,8 @@ margin-bottom: 60px;
     box-sizing: border-box;
     flex: 1 1 150px;
     max-width: 150px;
+    
+    transition: transform 0.5 ease-in-out;
   }
   
   .placeholder {
@@ -172,6 +186,31 @@ margin-bottom: 60px;
     height: 100px;
     border-radius: 8px;
     margin-bottom: 10px;
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 20px;
+
+  }
+  .placeholder img{
+    width: 150px;
+  height: 150px;
+  background: #f8dada;
+  border-radius: 10px;
+  margin-bottom: 10px
+  }
+  .dots {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
   }
   
   .services {
@@ -251,6 +290,13 @@ width: 120px;
   .slide_s1{
     align-items: center;
   }
+    .name {
+      font-family: 'Dancing Script', cursive;
+      font-weight: 600; 
+      color: black;
+    }
+    
+
   
   @media (max-width: 600px) {
     
